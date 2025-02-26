@@ -50,7 +50,7 @@ def blog_view(request):
     if request.user.is_authenticated:
         maqolalar = Maqola.objects.filter(muallif__user=request.user)
         context = {
-            'maqolalalr': maqolalar
+            'maqolalar': maqolalar
         }
         return render(request, 'blog.html', context)
     return redirect('login')
