@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Home</h1>
+{% for muallif in muallliflar %}
+<p>{{forloop.counter}}. {{muallif.ism}}</p>
+{% endfor %}
+<h3>User</h3>
+<a href="{% url 'logout' %}">
+    Log out
+</a>
+</body>
+</html>

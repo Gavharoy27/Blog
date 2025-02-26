@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add blog</title>
+</head>
+<body>
+<h1>Add blog</h1>
+<form method="post">
+  {% csrf_token %}
+  <label>Sarlavha</label>
+  <input type='text' name="sarlavha" placeholder="Sarlavha">
+  <label>Matn:</label>
+  <input type='text' name="matn" placeholder="Matn">
+  <label>Mavzu:</label>
+  <input type='text' name="mavzu" placeholder="Mavzu">
+  <label>Muallif:</label>
+    <input name="muallif" value="{{muallif}}">
+</form>
+</body>
+</html>
